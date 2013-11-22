@@ -1,11 +1,11 @@
 teamproject_frontend
 ====================
 
-**소개**
+## 소개
 
 TeamProject는 개인 혹은 소규모 조직을 위한 공유 TODO 기반 업무 협업 도구입니다.
 
-**설치방법**
+## 설치방법
 
 apache, nginx 등의 web root에 소스를 위치시키고 다음 url로 시작할수 있습니다.
 
