@@ -1,37 +1,29 @@
 <meta name="viewport" content="width=device-width">
 
-<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
-
 <div class="navbar navbar-default navbar-collapse navbar-fixed-top" role="navigation">
-    <div class="container">
-
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" 
-                data-target=".bs-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Team Project</a>
-        </div>
-
-        <nav class="collapse navbar-collapse bs-navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#section1">Team Project</a></li>
-                <li><a href="#section2">Section2</a></li>
-                <li><a href="#section3">Section4</a></li>
-                <li><a href="#section4">Contact</a></li>
-                <li><a href="https://github.com/mtreesoft/teamproject">Contribute</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#main">Main</a></li>
-            </ul>
-        </nav>
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" 
+            data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#section1">TeamProject</a>
     </div>
-</div>
 
-</header>
+    <nav class="collapse navbar-collapse bs-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="#section1">소개</a></li>
+            <li><a href="#section2">기능</a></li>
+            <li><a href="#section3">오픈소스</a></li>
+            <li><a href="#section4">팀</a></li>
+        </ul>
+        <div class="nav navbar-nav navbar-right">
+          <a href="#main" class="btn btn-success navbar-btn">시작하기</a>
+        </div>
+    </nav>
+</div>
 
 <div id="section1" class="section">
 
@@ -39,7 +31,7 @@
         소개
     </p>
 
-    <p class="desc">
+    <p class="desc center">
       개인 혹은 소규모 조직을 위한 공유 TODO 기반 업무 협업 도구입니다.
         <img src="/style/image/teamproject.png" class='img-rounded'/> <!-- teamproject -->
     </p>
@@ -50,6 +42,9 @@
 
     <p class="title">
         기능
+    </p>
+
+    <div class="desc">
 
         <p>
             빠른 Todo 생성
@@ -58,10 +53,12 @@
         </p>
 
         <p>
+
         트리 형태로 구조화된 Todo 관리
         <img src="/style/image/todotree.png" class='img-rounded'/> <!-- 트리 형태 todo 이미지 캡처 -->
         Todo를 트리형태로 구조화 하여 생성할 수 있습니다.
         다양한 업무 형태에 따라 일반적인 리스트 형태의 Todo를 사용하거나 아니면 좀더 구조적인 트리형태의 Todo를 사용할 수 있습니다.
+
         </p>
 
         <p>
@@ -75,16 +72,13 @@
         </p>
 
         <p>
-        추가 예정 기능
-        (* 추가 예정 기능은 사용자의 요구사항에 따라 변경됩니다.)
-        - 다양한 업무 별로 미리 만들어진 Todo 셋 제공 및 사용자 Todo 셋 공유
-        - 진행 중인 Todo를 챠트로 도식화 하는 분석 통계 도구
+            추가 예정 기능
+            (* 추가 예정 기능은 사용자의 요구사항에 따라 변경됩니다.)
+            - 다양한 업무 별로 미리 만들어진 Todo 셋 제공 및 사용자 Todo 셋 공유
+            - 진행 중인 Todo를 챠트로 도식화 하는 분석 통계 도구
         </p>
-    </p>
 
-    <p class="desc">
-
-    </p>
+    </div>
 
 </div>
 
@@ -112,8 +106,8 @@
         팀
     </p>
 
-    <p class="desc">
-        TeamProject는 Mtreesoft에서 만들었습니다.
+    <p class="desc center">
+        TeamProject는 Mtreesoft에서 만들었습니다.<br />
         문의 사항이 있으시다면 언제든 <a href="mailto:teamproject@mtreesoft.co.kr"><span class="glyphicon glyphicon-envelope"/>문의</a>주세요.
         <img src="/style/image/mtreesoft.png" class='img-rounded'/> <!-- mtreesoft logo -->
 
