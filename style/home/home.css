@@ -48,6 +48,7 @@ body {
     font-size: 40px;
     font-style: normal;
     text-align: center;
+    text-shadow: 1px 1px 2px #000;
 }
 
 .section h3 {
@@ -59,6 +60,12 @@ body {
     max-width: 600px;
     margin: 20px auto;
     line-height: 200%;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#section3 h2,
+#section3 .desc {
+    text-shadow: 0 0 0 #fff;
 }
 
 .section .desc p {
