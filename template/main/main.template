@@ -1,0 +1,22 @@
+    <!-- TODO 간단히 추가하기 -->
+    <div class="addtodo">
+        <!--<input type="text" placeholder="Make your TODO…">-->
+        <textarea rows=1  placeholder="Make your TODO..." id="addtodota"></textarea>
+        <button class="btn btn-small btn-default" id="addtodobtn" alt="edit"><span class="glyphicon glyphicon-saved"></span></button>
+    </div>
+    
+    <!-- TODO 리스트 -->
+    <div class="panel panel-default todolistblock">
+        <div class="panel-heading">
+            Todo List
+            <span id="todoCount"></span>
+            <div class="pull-right">
+                <button type="button" class="btn btn-primary btn-xs" data-toggle="button" id="doneCheckBtn">완료 가리기</button>
+            </div>
+        </div>
+        <!--<ul class="panel-body todolist list-group sortable list">-->
+        <!--</ul>-->
+        <div class="panel-body todolist list-group">
+        </div>
+    </div>
+

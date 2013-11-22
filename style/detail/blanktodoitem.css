@@ -1,0 +1,8 @@
+
+.show-edit-mode,.show-blank-mode{
+    display:block;
+}
+
+.hide-edit-mode,.hide-blank-mode{
+    display:none;
+}

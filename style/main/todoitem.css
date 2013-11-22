@@ -1,0 +1,66 @@
+div.todoline1 {
+    clear:both;
+    width:100%;
+}
+
+div.todoline1  div.roottodotitle {
+    float:left;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    max-width: 80%;
+    padding: .5em .6em .2em;
+ }
+
+div.todoline1 div.todousercommentcount {
+    float:right;
+    display: inline-block;
+}
+
+div.todoline2 {
+    clear:both;
+    width:100%
+}
+
+div.todoline2 div.todotitle {
+    margin-top:3px;
+    display: inline-block;
+    font-size:10pt;
+}
+
+div.todoline3 {
+    clear:both;
+    width:100%
+}
+div.todoline3 div.todostartenddate {
+    padding-top:10px;
+    text-align:right;
+    font-size:9px;
+}
+
+div.todoline4 {
+    clear:both;
+    width:100%;
+    text-align:right;
+}
+div.todoline4 div.todocreateddate {
+    text-align:right;
+    font-size:9px;
+}
+
+div.todoline4 div.todoclosedate {
+    text-align:right;
+    font-size:9px;
+}
+
+.startdate, .enddate, .todocreateddate {
+    display:inline-block;
+}
+
+.show_item {
+    display:inline-block;
+}
+
+.hide_item {
+    display:none;
+}

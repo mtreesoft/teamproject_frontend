@@ -1,0 +1,9 @@
+<div class="col-xs-2 user{{user._id}}">
+    <img src="{{user.pic}}&s=50" class="img-rounded"/>
+    <div class="user-name">{{user.name}}</div>
+    <div class="user-check-btn">
+        <button id="userDeleteBtn" type="button" class="btn btn-danger todoeditcancel btn-xs user-del-btn-{{user._id}}">
+        삭제
+        </button>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="comment_info">
+    <div class="comment_user">
+        <div class="user_profile">
+            <img src="{{comment.user.pic}}&s=20" class="img-rounded"/>
+        </div>
+        <div class="user_name">
+        {{comment.user.name}}
+        </div>
+        <div class="comment_date">
+            {{comment.date}}
+        </div>
+    </div>
+    <div class="comment_text">
+        {{comment.text}}
+    </div>
+</div>
+<div class="comment_delete pull-right">
+    <button class="btn btn-small btn-default" id="delcommentbtn" alt="delete comment"><span class="glyphicon glyphicon-remove"></span></button>
+</div>

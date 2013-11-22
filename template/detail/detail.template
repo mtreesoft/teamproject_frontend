@@ -1,0 +1,58 @@
+<div class="todolistblock">
+    <div class="todoroot">
+        <div class="top-btns">
+            <div class="projectbackbtn">
+                <button class="btn btn-small btn-xs" id="closedetail" alt="close"><i class="glyphicon glyphicon-chevron-left"></i> 뒤로</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="todolist">
+    </div>
+</div>
+
+<!--
+    User Search Modal
+-->
+<div class="modal fade" id="userAddModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close add-user-close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title"><span class="glyphicon glyphicon-user"/> 사용자 찾기</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row user-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control user-search-word">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default user-search-btn" type="button"><span class="glyphicon glyphicon-search"/></button>
+                            </span>
+                        </input>
+                    </div><!-- /input-group -->
+                </div>
+                <div class="row user-search-result">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>사진</th>
+                            <th>이름</th>
+                            <th>이메일</th>
+                            <th>선택하기</th>
+                        </tr>
+                        </thead>
+                        <tbody class="user-search-result-list">
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default add-user-close" data-dismiss="modal">닫기</button>
+                <button type="button" class="btn btn-primary add-user-save-close">추가</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+

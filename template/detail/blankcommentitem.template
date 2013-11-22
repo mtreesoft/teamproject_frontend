@@ -1,0 +1,9 @@
+<div class="blank_mode">
+    <button class="btn btn-small btn-default" id="addcommentbtn" alt="add comment"><span class="glyphicon glyphicon-plus"></span></button>
+</div>
+
+<div class="edit_mode">
+    <textarea rows=1  placeholder="Comment..." id="addCommentText"></textarea>
+    <button class="btn btn-small btn-default" id="savecommentbtn" alt="save comment"><span class="glyphicon glyphicon-save"></span></button>
+    <button class="btn btn-small btn-default" id="cancelcommentbtn" alt="save comment"><span class="glyphicon glyphicon-remove"></span></button>
+</div>

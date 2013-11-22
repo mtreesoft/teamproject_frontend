@@ -1,0 +1,8 @@
+<tr>
+    <td><img src="{{user.pic}}&s=20" class="img-rounded"/></td>
+    <td>{{user.name}}</td>
+    <td>{{user.user_id}}</td>
+    <td><label>
+        <input type="radio" name="user-select" class="{{user._id}}"> 선택
+    </label></td>
+</tr>

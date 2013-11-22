@@ -1,0 +1,38 @@
+<div class="todoline1">
+    <div class="label label-info roottodotitle">{{todo.roottodotitle}}</div>
+    <div class="todousercommentcount">
+        <span class="glyphicon glyphicon-user"/> {{todo.user_cnt}} <span class="glyphicon glyphicon-th-list"/> {{todo.comment_cnt}}
+    </div>
+</div>
+
+<div class="todoline2">
+    <div class="todotitle">
+        {{todo.title}}
+    </div>
+    <div class="pull-right">
+        <button id="deleteBtn" type="button" class="btn btn-danger tododelete btn-xs">
+            삭제
+        </button>
+        <button id="stateBtn" type="button" class="btn {{#if todo.done}}btn-success{{else}}btn-warning{{/if}} tododone btn-xs">
+            {{#if todo.done}}완료{{else}}진행중{{/if}}
+        </button>
+    </div>
+</div>
+
+<div class="todoline3">
+    <div class="todostartenddate">
+        시작일 : {{todo.start_date}}  종료일 : {{todo.end_date}}
+    </div>
+</div>
+
+<div class="todoline4">
+    <div class="todoclosedate">
+        완료일 : {{todo.close_date}}
+    </div>
+    <div class="todocreateddate">
+        생성일 : {{todo.create_date}}
+    </div>
+</div>
+
+
+

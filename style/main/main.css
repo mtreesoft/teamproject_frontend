@@ -1,0 +1,56 @@
+div.main {
+    text-align:left;
+    margin-top:25px;
+    margin-left:10px;
+}
+
+@media(min-width:1000px) {
+    div.main {
+        width:80%;
+    }
+    div.main div.addtodo textarea {
+        height:35px;
+        width:70%;
+        resize: none;
+        overflow:hidden;
+    }
+    div.main div.todolistblock {
+        width:70%;
+    }
+}
+
+@media(max-width:1000px) {
+    div.main {
+        width:700px;
+    }
+    div.main div.addtodo textarea {
+        height:35px;
+        width:400px;
+        resize: none;
+        overflow:hidden;
+    }
+    div.main div.todolistblock {
+        width:400px;
+    }
+}
+
+#addtodota {
+    border: 1px solid #dddddd; /* #b0b0b0; */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 8px;
+}
+
+.todolistblock {
+    margin-bottom: 30px;
+}
+
+.todolistblock .todolist {
+    padding: 0;
+}
+
+.todolistblock .todolist .todoitem {
+    padding: 10px;
+}

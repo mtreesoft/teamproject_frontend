@@ -1,0 +1,16 @@
+<div class="list-group-item blank_border">
+	<div class="blank_mode">
+	    <!--div id="depthTextID"></div-->
+	    <button class="btn btn-small btn-default" id="addtodobtn" alt="add comment"><span class="glyphicon glyphicon-plus"></span></button>
+	</div>
+
+	<div class="edit_mode">
+	    <textarea rows=1  placeholder="Make your TODO..." id="addtodota"></textarea>
+	    <button class="btn btn-small btn-default" id="savetodobtn" alt="save comment"><span class="glyphicon glyphicon-save"></span></button>
+	    <button class="btn btn-small btn-default" id="canceltodobtn" alt="save comment"><span class="glyphicon glyphicon-remove"></span></button>
+	</div>
+
+	<div class="end-depth">
+	    더 이상 하위 depth의 todo를 생성할 수 없습니다.
+	</div>
+</div>

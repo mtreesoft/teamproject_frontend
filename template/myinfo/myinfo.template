@@ -1,0 +1,74 @@
+<div class="myinfo">
+    <!-- titie -->
+    <h1><a href="/#main">TeamProject</a></h1>
+    <div class="info">
+        
+        <!-- profile image -->
+        <img class="img-rounded profileimg" id="profileimg" alt="profile image"/>
+        
+        <div class="showmode">
+            <!-- name -->
+            <div class="name" id="name"></div>
+            <!-- email -->
+            <div class="email" id="email"></div>
+            <!-- regdate -->
+            <div class="regdate" id="regdate"></div>
+        </div>
+
+        <div class="editmode hideblock">
+
+            <p class="desc">
+                프로필 이미지는 <a href="https://ko.gravatar.com/">Gravatar</a>에서 수정해 주세요.
+            </p>
+
+            <div class="form-group">
+                <label class="control-label">Name</label>
+                <div class="controls">
+                    <input type="email" class="form-control" id="editName" placeholder="Name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Password</label>
+                <div class="controls">
+                    <input type="password" class="form-control" id="editPW" placeholder="Password">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Password Confirm</label>
+                <div class="controls">
+                    <input type="password" class="form-control" id="editPWConfirm" placeholder="Password confirm">
+                </div>
+            </div>
+
+            <!-- email -->
+            <div class="email" id="edit_email"></div>
+
+            <!-- regdate -->
+            <div class="regdate" id="edit_regdate"></div>
+
+        </div>
+    </div>
+
+    <div class="showmode-btns">
+
+        <!-- 편집버튼 -->
+        <button class="btn btn-small btn-default" id="editbtn" alt="edit"><i class="glyphicon glyphicon-pencil"></i></button>
+
+        <!-- 로그아웃버튼 -->
+        <button class="btn btn-small btn-inverse" id="logoutbtn" alt="logout"><i class="glyphicon glyphicon-off"></i></button>
+
+    </div>
+
+    <div class="editmode-btns hideblock">
+
+        <!-- 편집저장버튼 -->
+        <button class="btn btn-small btn-default" id="editsavebtn" alt="save edit"><i class="glyphicon glyphicon-save"></i></button>
+
+        <!-- 편집취소버튼 -->
+        <button class="btn btn-small btn-inverse" id="editcancelbtn" alt="edit cancel"><i class="glyphicon glyphicon-remove"></i></button>
+
+    </div>
+
+</div>
