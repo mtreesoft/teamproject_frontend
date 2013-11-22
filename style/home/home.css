@@ -44,10 +44,14 @@ body {
     padding: 100px 0;
 }
 
-.section .title {
-    font-weight: 700;
+.section h2 {
+    font-size: 40px;
     font-style: normal;
     text-align: center;
+}
+
+.section h3 {
+    font-size: 20px;
 }
 
 .section .desc {
@@ -55,6 +59,14 @@ body {
     max-width: 600px;
     margin: 20px auto;
     line-height: 200%;
+}
+
+.section .desc p {
+    margin: 40px 0;
+}
+
+.section .desc img {
+    margin: 10px 0;
 }
 
 .section .center {
