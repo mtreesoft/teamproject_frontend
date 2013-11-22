@@ -25,7 +25,6 @@ define(
              * 대쉬 보드에서 발생하는 이벤트 정의
              */
             events: {
-
             },
 
             /*
@@ -33,6 +32,7 @@ define(
              */
             render: function() {
                 $(this.el).html(template());
+                $(this.el).find('a#login').click(this.locateLogin);
                 return this;
             },
             /*
@@ -45,6 +45,10 @@ define(
              * 이 메서드는 pageTransition.js을 이용해서 사용할 경우에만 사용 가능하다.(*중요)
              */
             viewDidDisappear: function() {
+            },
+
+            locateLogin: function(e) {
+                document.location = "/#login";
             }
 
         });

@@ -1,1 +1,12 @@
-실패 화면....
+<div class="container verify_email">
+    <div class="row">
+        <div class="center span4 well">
+            <legend>이메일 주소 확인 실패</legend>
+            <div class="alert alert-danger">
+            이메일 주소 확인이 실패하였습니다.<br /><br />
+            아래 이메일 주소로 연락주시면 확인하겠습니다.<br /><br />
+            <a href="mailto:teamproject@mtreesoft.co.kr">teamproject@mtreesoft.co.kr</a>
+            </div>
+        </div>
+    </div>
+</div>

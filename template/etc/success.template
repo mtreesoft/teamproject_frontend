@@ -1,1 +1,16 @@
-성공 화면...
+<div class="container verify_email">
+    <div class="row">
+        <div class="center span4 well">
+            
+            <legend>이메일 주소 확인 성공</legend>
+            
+            <div class="alert alert-success">
+            이메일 주소 확인이 성공하였습니다.<br /><br />
+            아래 버튼을 눌러 로그인 하 수 있습니다.
+            </div>
+
+            <a class="btn btn-primary btn-lg" id="login">로그인</a>
+            
+        </div>
+    </div>
+</div>
