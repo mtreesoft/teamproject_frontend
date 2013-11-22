@@ -41,7 +41,7 @@
 
     <p class="desc">
       개인 혹은 소규모 조직을 위한 공유 TODO 기반 업무 협업 도구입니다.
-
+        <img src="/style/image/teamproject.png" class='img-rounded'/> <!-- teamproject -->
     </p>
 
 </div>
@@ -53,24 +53,24 @@
 
         <p>
             빠른 Todo 생성
-            <img src=""/> <!-- todo 생성 이미지 캡쳐 -->
+            <img src="/style/image/maketodo.png" class='img-rounded'/> <!-- todo 생성 이미지 캡쳐 -->
             텍스트 입력만으로 Todo를 생성할 수 있습니다.
         </p>
 
         <p>
         트리 형태로 구조화된 Todo 관리
-        <img src=""/> <!-- 트리 형태 todo 이미지 캡처 -->
+        <img src="/style/image/todotree.png" class='img-rounded'/> <!-- 트리 형태 todo 이미지 캡처 -->
         Todo를 트리형태로 구조화 하여 생성할 수 있습니다.
         다양한 업무 형태에 따라 일반적인 리스트 형태의 Todo를 사용하거나 아니면 좀더 구조적인 트리형태의 Todo를 사용할 수 있습니다.
         </p>
 
         <p>
             Todo 공유
-            <img src=""/> <!-- todo user 항목 캡처 -->
+            <img src="/style/image/todoshare.png" class='img-rounded'/> <!-- todo user 항목 캡처 -->
             동료와 협업이 필요한 Todo는 공유할 수 있습니다.
             트리형태로 구조화 된  Todo의 경우 Todo항목 하나를 공유하는 것 만으로 전체 Todo를 모두 공유할 수 있습니다.
             TeamProject 사용자라면 손쉽게 Todo를 공유할 수 있으며 공유 받을 수 있습니다.
-            <img src=""/> <!-- todo comment 항목 캡처 -->
+            <img src="/style/image/todocomment.png" class='img-rounded'/> <!-- todo comment 항목 캡처 -->
             Todo 별로 Comment를 달아 의견 교환을 할 수 있습니다.
         </p>
 
@@ -115,6 +115,8 @@
     <p class="desc">
         TeamProject는 Mtreesoft에서 만들었습니다.
         문의 사항이 있으시다면 언제든 <a href="mailto:teamproject@mtreesoft.co.kr"><span class="glyphicon glyphicon-envelope"/>문의</a>주세요.
+        <img src="/style/image/mtreesoft.png" class='img-rounded'/> <!-- mtreesoft logo -->
+
     </p>
 
 </div>
