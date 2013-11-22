@@ -1,49 +1,43 @@
 <meta name="viewport" content="width=device-width">
 
-<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
-
 <div class="navbar navbar-default navbar-collapse navbar-fixed-top" role="navigation">
-    <div class="container">
-
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" 
-                data-target=".bs-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Team Project</a>
-        </div>
-
-        <nav class="collapse navbar-collapse bs-navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#section1">Team Project</a></li>
-                <li><a href="#section2">Section2</a></li>
-                <li><a href="#section3">Section4</a></li>
-                <li><a href="#section4">Contact</a></li>
-                <li><a href="https://github.com/mtreesoft/teamproject">Contribute</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#main">Main</a></li>
-            </ul>
-        </nav>
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" 
+            data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#section1">TeamProject</a>
     </div>
-</div>
 
-</header>
+    <nav class="collapse navbar-collapse bs-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="#section1">소개</a></li>
+            <li><a href="#section2">기능</a></li>
+            <li><a href="#section3">오픈소스</a></li>
+            <li><a href="#section4">팀</a></li>
+        </ul>
+        <div class="nav navbar-nav navbar-right">
+          <a href="#main" class="btn btn-success navbar-btn">시작하기</a>
+        </div>
+    </nav>
+</div>
 
 <div id="section1" class="section">
 
     <p class="title">
 
-        TEAM PROJECT
+        TeamProject
 
     </p>
 
     <p class="desc">
 
-        팀 프로젝트는 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고 어쩌고 저쩌고 어쩌고
+        팀 프로젝트는 혼자 쓰는 작업 목록(To Do)을 확장하여,<br />
+        여러 사람과 작업을 공유하고 진행상황을 파악 가능하며
+        여러 사람이 협업하는 업무에 적용할 수 있는 프로젝트입니다. 
 
     </p>
 
@@ -52,12 +46,12 @@
 <div id="section2" class="section">
 
     <p class="title">
-        Contact
+        기능
     </p>
 
     <p class="desc">
 
-        엠트리소프트는 엠트리소프트는 엠트리소프트는 엠트리소프트는 엠트리소프트는 엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는엠트리소프트는1234
+        ///
 
     </p>
 
