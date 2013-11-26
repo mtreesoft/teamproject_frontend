@@ -48,29 +48,29 @@ define(
 
             },
 
+            showError: function(error) {
+                $("#error").text(error).show();
+            },
+
             /*
              * 아래 메서드들은 각 이벤트가 호출되었을 시 처리할 메서드들 위 event에서 정의된 이벤트가 발생시 호출된다
              */
             // PC,Tablet,Mobile
             showItem: function() {
+                $('#error').hide();
+                $("#editPW").val("");
+                $("#editPWConfirm").val("");
+                    
                 if(this.editmode) {
-                    $('div.showmode').addClass('hideblock');
-                    $('div.showmode').removeClass('showblock');
-                    $('div.editmode').addClass('showblock');
-                    $('div.editmode').removeClass('hideblock');
-                    $('div.showmode-btns').addClass('hideblock');
-                    $('div.showmode-btns').removeClass('showblock');
-                    $('div.editmode-btns').addClass('showblock');
-                    $('div.editmode-btns').removeClass('hideblock');
+                    $('div.showmode').hide();
+                    $('div.editmode').show();
+                    $('div.showmode-btns').hide();
+                    $('div.editmode-btns').show();
                 } else {
-                    $('div.showmode').addClass('showblock');
-                    $('div.showmode').removeClass('hideblock');
-                    $('div.editmode').addClass('hideblock');
-                    $('div.editmode').removeClass('showblock');
-                    $('div.showmode-btns').addClass('showblock');
-                    $('div.showmode-btns').removeClass('hideblock');
-                    $('div.editmode-btns').addClass('hideblock');
-                    $('div.editmode-btns').removeClass('showblock');
+                    $('div.showmode').show();
+                    $('div.editmode').hide();
+                    $('div.showmode-btns').show();
+                    $('div.editmode-btns').hide();
                 }
             },
             goEdit:function(e) {
@@ -78,12 +78,17 @@ define(
                 this.showItem();
             },
             goEditSave:function(e) {
-                if($("#editPW").val() == undefined ||
-                    $("#editPW").val() == null ||
-                    $("#editPW").val() != $("#editPWConfirm").val()) {
-                    alert("비밀번호를 확인해 주세요");
+
+                if(!$("#editPW").val()) {
+                    this.showError("비밀번호를 입력해 주세요.");
                     return;
                 }
+
+                if ($("#editPW").val() != $("#editPWConfirm").val()) {
+                    this.showError("입력된 두 비밀번호를 확인해 주세요.");
+                    return;
+                }
+
 
                 var __this = this;
                 var editUser = new User({
@@ -92,17 +97,14 @@ define(
                 });
                 editUser.edit(function(a, b, c) {
                     if(a.code == "ok") {
-                        alert("변경성공");
                         __this.loadData();
                         __this.goEdit();
                     } else {
-                        alert("변경실패 - " + a.message);
+                        __this.showError(a.message[0].msg);
                     }
                 }, function(a, b, c){
-                    alert("변경실패");
+                    __this.showError("오류로 변경이 실패하였습니다. 잠시 후 다시 시도해 주세요.");
                 });
-                $("#editPW").val("");
-                $("#editPWConfirm").val("");
             },
             // PC,Tablet
 
@@ -112,14 +114,9 @@ define(
             },
             logoutClick: function(e) {
                 this.user.logout(function(a,b,c) {
-                    // 가입성공.
-                    alert("로그아웃 되었습니다.");
                     Cookies.removeCookie("teamproject_email");
                     location.reload();
-                }, function(a,b,c) {
-                        // 가입실패.
-                        alert("로그아웃 실패.");
-                    });
+                }, function(a,b,c) {});
 
             },
 
@@ -145,34 +142,32 @@ define(
             loadData: function() {
                 var __this = this;
                 this.user.me(function(a,b,c) {
+
+                    var myinfo = $('.myinfo .info');
+                    
                     // 내정보 가져오기 성공.
                     if(a.code == "ok") {
                         var imgpath = a.message[0].pic + "&s=100";
-                        $('div.myinfo div.info img.profileimg').attr("src", imgpath);
-                        if(a.message[0].name == undefined || a.message[0].name == null) {
-                            $('div.myinfo div.info div.showmode div.name').text("No Name");
+                        myinfo.find('.profileimg').attr("src", imgpath);
+                        if(!a.message[0].name) {
+                            myinfo.find('.showmode .name').text("No Name");
                         } else {
-                            $('div.myinfo div.info div.showmode div.name').text(a.message[0].name);
+                            myinfo.find('.showmode .name').text(a.message[0].name);
                             $('input#editName').val(a.message[0].name);
                         }
-                        $('div.myinfo div.info div.showmode div.email').text(a.message[0].user_id);
-                        $('div#edit_email').text(a.message[0].user_id);
-                        $('div.myinfo div.info div.showmode div.regdate').text(__this.dateformat(new Date(a.message[0].reg_date)));
+                        myinfo.find('.showmode .email').text(a.message[0].user_id);
+                        $('#edit_email').text(a.message[0].user_id);
+                        myinfo.find('.showmode .regdate').text(__this.dateformat(new Date(a.message[0].reg_date)));
                         $('div#edit_regdate').text(__this.dateformat(new Date(a.message[0].reg_date)));
                     } else {
-                        if(a.code = "NotLoginError") {
-                            alert("로그인 세션 만료 - " + a.message);
-                            Cookies.removeCookie("teamproject_email");
-                            document.location = '/#main';
-                        } else {
-                            alert("내 정보 가져오기 실패 - " + a.message);
-                            document.location = '/#login';
-                        }
+                        Cookies.removeCookie("teamproject_email");
+                        alert("로그인 정보가 잘못되었습니다. 다시 로그인 해 주세요.");
+                        document.location = '/#login';
                     }
+
                 }, function(a,b,c) {
                     // 내 정보 가져오기 실패.
-                    alert("내정보 가져오기 실패.");
-                    document.location = '/#login';
+                    alert("오류가 발생하여 내 정보를 가져올 수 없었습니다. 잠시 후 다시 시도해 주세요.");
                 });
             },
             viewDidAppear: function() {
@@ -192,7 +187,7 @@ define(
 
         });
 
-        return new MyInfoView;
+        return (new MyInfoView);
     });
 
 

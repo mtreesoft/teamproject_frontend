@@ -1,27 +1,32 @@
-div.myinfo {
+.myinfo {
     text-align:right;
 }
-button {
+
+.myinfo button {
     clear:both;
 }
-div.myinfo h1.title {
+
+.myinfo .title {
     margin-top:10px;
 }
-div.myinfo div.info, 
-div.myinfo div.btns {
+
+.myinfo .info, 
+.myinfo .btns {
     position:relative;
     margin:20px 0;
 }
-div.myinfo div.info {
+
+.myinfo .info {
     margin:10px 0;
 }
 
-div.myinfo div.showmode {
+.myinfo .showmode {
     margin:20px 0;
     line-height: 25px;
 }
 
-div.myinfo div.editmode {
+.myinfo .editmode {
+    display: none;
     width: 90%;
     max-width: 300px;
     padding: 20px;
@@ -34,19 +39,24 @@ div.myinfo div.editmode {
     border-radius: 5px;
 }
 
-div.myinfo div.editmode .desc {
+.myinfo .editmode .desc {
     font-size: small;
     letter-spacing: -1px;
 }
 
-div.myinfo div button.btn {
+.myinfo .btn {
     margin-top:5px;
 }
 
-.showblock {
-    display:block;
+.myinfo .editmode-btns {
+    display:none;
 }
 
-.hideblock {
+.myinfo #error {
     display:none;
+    letter-spacing: -1px;
+}
+
+.myinfo .alert {
+    padding: 5px;
 }
