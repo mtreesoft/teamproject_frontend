@@ -1,7 +1,12 @@
 .login {
-	width: 500px;
-	margin: 120px auto 0 0;
+	position: absolute;
+	left: 50%;
+	width: 400px;
+	margin: 120px auto 0 -200px;
 }
 .login .alert {
 	display: none;
+}
+.login .well {
+	margin-bottom: 0;
 }
