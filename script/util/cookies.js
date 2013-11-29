@@ -21,7 +21,6 @@ define( function() {
         setCookieDuraion : function (key, value, days) {
             if(navigator.cookieEnabled) {
                 var cookieExpireDate = new Date();
-                //cookieExpireDate.setMonth(cookieExpireDate.getMonth() + 1);
                 cookieExpireDate.setDate(cookieExpireDate.getDate() + days);
                 document.cookie = key + "=" + value + "; expires=" + cookieExpireDate.toGMTString() + "; path=/";
             }
@@ -47,10 +46,11 @@ define( function() {
                 }
             }
         },
+        
         // 쿠기삭제
         removeCookie: function (key) {
             if(navigator.cookieEnabled) {
-                var cookieExpireDate = new Date(2000,1,1,1,00,00);
+                var cookieExpireDate = new Date(2000,1,1,1,00);
                 document.cookie = key + "=; expires=" + cookieExpireDate.toGMTString() + "; path=/";
             }
         }

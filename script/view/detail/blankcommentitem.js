@@ -70,11 +70,11 @@ define(
                     if(a.code == "ok" ) {
                         __this.trigger("click_add_comment", this);
                     } else {
-                        ;
+                        // ;
                     }
 
                 }, function(a,b,c){
-                    ;
+                    // ;
                 });
             },
             cancelCommentItemClick: function(e) {

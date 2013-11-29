@@ -1,9 +1,9 @@
-div.todoline2 {
+.todoline2 {
     clear:both;
     width:100%
 }
 
-div.todoline2 div.todotitle {
+.todoline2 .todotitle {
     float:left;
     margin-top:3px;
     display: inline-block;
@@ -13,33 +13,31 @@ div.todoline2 div.todotitle {
     word-wrap: break-word;
 }
 
-div.todoline2  div.tododone {
-    padding-top:10px;
-    float:right;
-    display: inline-block;
+.detailtodoitem .buttons {
+    text-align: right;
 }
 
-div.todoline3 {
+.todoline3 {
     clear:both;
     width:100%
 }
-div.todoline3 div.todostartenddate {
+.todoline3 .todostartenddate {
     padding-top:10px;
     text-align:right;
     font-size:9px;
 }
 
-div.todoline4 {
+.todoline4 {
     clear:both;
     width:100%;
     text-align:right;
 }
-div.todoline4 div.todocreateddate {
+.todoline4 .todocreateddate {
     text-align:right;
     font-size:9px;
 }
 
-div.todoline4 div.todoclosedate {
+.todoline4 .todoclosedate {
     text-align:right;
     font-size:9px;
 }
@@ -71,4 +69,8 @@ div.todoline4 div.todoclosedate {
 
 .comments-group {
     margin:5px 0;
+}
+
+#adduserbtn {
+    margin: 9px 30px;
 }

@@ -1,6 +1,6 @@
 <div class="todoline2">
     <h3 class="todotitle">{{todo.title}}</h3>
-    <div class="pull-right">
+    <div class="buttons">
         <button id="editTodoItemBtn" type="button" class="btn btn-primary todoedit btn-xs">
             편집
         </button>

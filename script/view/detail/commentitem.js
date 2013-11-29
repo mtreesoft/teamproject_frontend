@@ -46,16 +46,11 @@ define(
              */
             bShowDelBtn:false,
             commentItemClick: function(e) {
-                if(this.bShowDelBtn) {
-                    $(this.el).find('.comment_delete').removeClass('show-delete-btn');
-                    $(this.el).find('.comment_delete').addClass('hide-delete-btn');
-                } else {
-                    $(this.el).find('.comment_delete').removeClass('hide-delete-btn');
-                    $(this.el).find('.comment_delete').addClass('show-delete-btn');
-                }
-                this.bShowDelBtn = !this.bShowDelBtn;
+                
+                this.bShowDelBtn ? $(this.el).find('.comment_delete').show() :
+                                   $(this.el).find('.comment_delete').hide();
 
-                //this.trigger("click_todo", this);
+                this.bShowDelBtn = !this.bShowDelBtn;
             },
             commentDelBtnClick: function(e) {
                 e.stopPropagation();

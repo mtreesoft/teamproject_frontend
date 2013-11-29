@@ -4,12 +4,10 @@ div.todoline1 {
 }
 
 div.todoline1  div.roottodotitle {
-    float:left;
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
     max-width: 80%;
-    padding: .5em .6em .2em;
  }
 
 div.todoline1 div.todousercommentcount {
@@ -23,7 +21,7 @@ div.todoline2 {
 }
 
 div.todoline2 div.todotitle {
-    margin-top:3px;
+    margin:10px 0;
     display: inline-block;
     font-size:10pt;
 }

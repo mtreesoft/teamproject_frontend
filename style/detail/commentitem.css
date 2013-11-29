@@ -1,10 +1,5 @@
-
-.show-delete-btn {
-    display:inline-block;
-}
-
-.hide-delete-btn {
-    display:none;
+.comment_delete {
+	display:none;
 }
 
 .comment_info {
