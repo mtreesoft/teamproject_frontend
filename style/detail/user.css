@@ -1,4 +1,17 @@
 .user-name, .user-check-btn {
-    width:50px;
-    text-align: center;
+width:50px;
+text-align:center;
+font-size:small;
+}
+
+.user-name {
+margin:5px 0;
+}
+
+.userlist .col-xs-2 {
+padding:5px;
+}
+
+#adduserbtn {
+margin:12px 10px;
 }

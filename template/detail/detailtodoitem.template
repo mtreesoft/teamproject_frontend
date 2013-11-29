@@ -17,18 +17,15 @@
 </div>
 
 <div class="todoline3">
-    <div class="todostartenddate">
-        시작일 : {{todo.start_date}}  종료일 : {{todo.end_date}}
-    </div>
-</div>
-
-<div class="todoline4">
-    <div class="todoclosedate">
-        완료일 : {{todo.close_date}}
-    </div>
-    <div class="todocreateddate">
-        생성일 : {{todo.create_date}}
-    </div>
+    <span class="todostartenddate">
+        시작: {{todo.start_date}} / 종료: {{todo.end_date}}
+    </span> 
+    <span class="todoclosedate">
+       / 완료: {{todo.close_date}}
+    </span>
+    <span class="todocreateddate">
+       / 생성: {{todo.create_date}}
+    </span>
 </div>
 
 <div class="todoline5">

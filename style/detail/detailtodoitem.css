@@ -1,76 +1,87 @@
-.todoline2 {
-    clear:both;
-    width:100%
-}
-
 .todoline2 .todotitle {
-    float:left;
-    margin-top:3px;
-    display: inline-block;
-    width:100%;
-    font-size:10pt;
-    line-height: 14px;
-    word-wrap: break-word;
+font-size:x-small;
+word-wrap:break-word;
 }
 
 .detailtodoitem .buttons {
-    text-align: right;
+text-align:right;
 }
 
 .todoline3 {
-    clear:both;
-    width:100%
-}
-.todoline3 .todostartenddate {
-    padding-top:10px;
-    text-align:right;
-    font-size:9px;
+font-size:x-small;
 }
 
 .todoline4 {
-    clear:both;
-    width:100%;
-    text-align:right;
-}
-.todoline4 .todocreateddate {
-    text-align:right;
-    font-size:9px;
-}
-
-.todoline4 .todoclosedate {
-    text-align:right;
-    font-size:9px;
-}
-
-.show_item {
-    display:inline-block;
-}
-.show_item_block {
-    display:block;
+clear:both;
+text-align:right;
+width:100%;
 }
 
 .hide_item {
-    display:none;
+display:none;
 }
 
 .todoeditmode {
-    margin:15px;
+margin:15px;
 }
 
 #edit_title {
-    resize: none;
-    overflow:hidden;
-    width:100%;
-}
-
-.startdate, .enddate, .todocreateddate {
-    display:inline-block;
+overflow:hidden;
+resize:none;
+width:100%;
 }
 
 .comments-group {
-    margin:5px 0;
+margin:5px 0;
 }
 
-#adduserbtn {
-    margin: 9px 30px;
+.todoline4 .todocreateddate,.todoline4 .todoclosedate {
+font-size:x-small;
+text-align:right;
+}
+
+.startdate,.enddate,.todocreateddate {
+font-size:x-small;
+}
+
+.show_item {
+display:inline-block;
+}
+
+.list-group {
+margin:5px;
+}
+
+.todocommentlist {
+padding:0;
+margin:0;
+}
+
+.todocommentlist .commentitem {
+border:0;
+border-bottom: 1px dashed #ccc;
+margin:1px 0;
+}
+
+.todocommentlist .blankcommentitem {
+margin:5px 0;
+}
+
+.detailview .todolistblock {
+margin-bottom: 30px;
+}
+
+.detailview .todolistblock .todolist {
+padding: 0;
+}
+
+.detailview .panel .panel-title {
+font-size:small;
+}
+
+.detailview .todolistblock .todolist .todoitem,
+.detailview .panel .panel-body,
+.panel .panel-heading,
+.list-group-item {
+padding: 5px;
 }

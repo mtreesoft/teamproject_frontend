@@ -118,10 +118,10 @@ define(
                         if(a.code == "ok") {
                             var title = ""
                             if(depth != 0) {
-                                title = ">";
+                                title = " > ";
                             }
                             title +=a.message[0].title;
-                            $(__this.el).find("div.roottodotitle").append(title);
+                            $(__this.el).find(".roottodotitle").append(title);
 
                             if(depth < (_.size(parents) -2 )) {
                                 __this.getParentTitle(__this, depth+1);

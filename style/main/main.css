@@ -43,14 +43,7 @@ div.main {
     padding: 8px;
 }
 
-.todolistblock {
-    margin-bottom: 30px;
-}
-
-.todolistblock .todolist {
-    padding: 0;
-}
-
-.todolistblock .todolist .todoitem {
-    padding: 10px;
+.main .panel-body {
+padding:0;
+margin:0;
 }

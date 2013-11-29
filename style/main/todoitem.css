@@ -1,64 +1,65 @@
-div.todoline1 {
-    clear:both;
-    width:100%;
+.todoline1 {
+position:relative;
+height:1.5em;
+background:#eee;
+padding:1px 5px;
+border: 1px solid #ddd;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
 }
 
-div.todoline1  div.roottodotitle {
-    overflow: hidden;
-    text-overflow:ellipsis;
-    white-space: nowrap;
-    max-width: 80%;
- }
-
-div.todoline1 div.todousercommentcount {
-    float:right;
-    display: inline-block;
+.todoline1 .roottodotitle {
+position:absolute;
+width:80%;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+font-size:small;
 }
 
-div.todoline2 {
-    clear:both;
-    width:100%
+.todoline1 .todousercommentcount {
+position:absolute;
+right:0;
+width:20%;
+text-align:right;
+font-size:x-small;
+padding:0.2em 1em;
 }
 
-div.todoline2 div.todotitle {
-    margin:10px 0;
-    display: inline-block;
-    font-size:10pt;
+.todoline2 .todotitle {
+font-size:small;
+margin:.5em .1em;
 }
 
-div.todoline3 {
-    clear:both;
-    width:100%
-}
-div.todoline3 div.todostartenddate {
-    padding-top:10px;
-    text-align:right;
-    font-size:9px;
+.todoline2 .buttons {
+text-align:right;
 }
 
-div.todoline4 {
-    clear:both;
-    width:100%;
-    text-align:right;
-}
-div.todoline4 div.todocreateddate {
-    text-align:right;
-    font-size:9px;
-}
-
-div.todoline4 div.todoclosedate {
-    text-align:right;
-    font-size:9px;
-}
-
-.startdate, .enddate, .todocreateddate {
-    display:inline-block;
-}
-
-.show_item {
-    display:inline-block;
+.todoline4 {
+clear:both;
+text-align:right;
+width:100%;
 }
 
 .hide_item {
-    display:none;
+display:none;
+}
+
+.todoline3 {
+margin:5px 0;
+text-align:right;
+}
+
+.todoline4 .todocreateddate,.todoline4 .todoclosedate {
+font-size:x-small;
+text-align:right;
+}
+
+.startdate,.enddate,.todocreateddate {
+font-size:x-small;
+}
+
+.show_item{
+    display:inline-block;
 }

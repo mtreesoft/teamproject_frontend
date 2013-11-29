@@ -2,10 +2,6 @@
 	display:none;
 }
 
-.comment_info {
-    display:inline-block;
-}
-
 .user_profile, .user_name, .comment_date {
     display:inline-block;
 }

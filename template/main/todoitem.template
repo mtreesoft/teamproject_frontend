@@ -1,15 +1,15 @@
 <div class="todoline1">
-    <div class="label label-info roottodotitle">{{todo.roottodotitle}}</div>
-    <div class="todousercommentcount">
+    <p class="roottodotitle">{{todo.roottodotitle}}</p>
+    <p class="todousercommentcount">
         <span class="glyphicon glyphicon-user"/> {{todo.user_cnt}} <span class="glyphicon glyphicon-th-list"/> {{todo.comment_cnt}}
-    </div>
+    </p>
 </div>
 
 <div class="todoline2">
     <div class="todotitle">
         {{todo.title}}
     </div>
-    <div class="pull-right">
+    <div class="buttons">
         <button id="deleteBtn" type="button" class="btn btn-danger tododelete btn-xs">
             삭제
         </button>
@@ -20,18 +20,15 @@
 </div>
 
 <div class="todoline3">
-    <div class="todostartenddate">
-        시작일 : {{todo.start_date}}  종료일 : {{todo.end_date}}
-    </div>
-</div>
-
-<div class="todoline4">
-    <div class="todoclosedate">
-        완료일 : {{todo.close_date}}
-    </div>
-    <div class="todocreateddate">
-        생성일 : {{todo.create_date}}
-    </div>
+    <span class="todostartenddate">
+        시작: {{todo.start_date}} / 종료: {{todo.end_date}}
+    </span>
+    <span class="todoclosedate">
+       / 완료: {{todo.close_date}}
+    </span>
+    <span class="todocreateddate">
+       / 생성: {{todo.create_date}}
+    </span>
 </div>
 
 
