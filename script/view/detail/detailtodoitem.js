@@ -81,10 +81,7 @@ define(
                 $(this.el).find('#edit_startdate').val(this.dateformat2(new Date(this.model.start_date)));
                 $(this.el).find('#edit_enddate').val(this.dateformat2(new Date(this.model.end_date)));
 
-
-
-                $(this.el).find('.todoeditmode').removeClass('hide_item');
-                $(this.el).find('.todoeditmode').addClass('show_item');
+                $(this.el).find('.todoeditmode').show();
             },
             refreshThisTodo: function() {
                 var __this = this;
@@ -101,10 +98,10 @@ define(
                         }
                         __this.render();
                     } else {
-                        ;
+                        // ;
                     }
                 }, function(a,b,c){
-                    ;
+                    // ;
                 });
             },
             saveEditBtnClick: function(e) {
@@ -120,10 +117,10 @@ define(
                     if(a.code == "ok") {
                         __this.refreshThisTodo();
                     } else {
-                        ;
+                        // ;
                     }
                 }, function(a,b,c){
-                    ;
+                    // ;
                 });
             },
             cancelEditBtnClick: function(e) {
@@ -132,9 +129,7 @@ define(
                 $(this.el).find('#edit_startdate').val("");
                 $(this.el).find('#edit_enddate').val("");
                 $(this.el).find('.edituserlist').empty();
-
-                $(this.el).find('.todoeditmode').removeClass('show_item');
-                $(this.el).find('.todoeditmode').addClass('hide_item');
+                $(this.el).find('.todoeditmode').hide();
             },
             deleteTodoItemBtnClick: function(e) {
                 e.stopPropagation();
@@ -144,7 +139,7 @@ define(
             stateTodoItemBtnClick: function(e) {
                 e.stopPropagation();
 
-                this.model.done = !this.model.done
+                this.model.done = !this.model.done;
                 var __this = this;
                 var __todo = new Todo({
                     done: this.model.done
@@ -154,10 +149,10 @@ define(
                     if(a.code == "ok") {
                         __this.refreshThisTodo();
                     } else {
-                        ;
+                        // ;
                     }
                 }, function (a,b,c) {
-                    ;
+                    // ;
                 });
             },
             openSubTodoItemBtnClick: function(e) {
@@ -198,8 +193,7 @@ define(
                             $(__this.el).find('.userlist').append(user_template({user:a.message[i]}));
                             if(_.size(a.message) > 1) {
                                 var thisuserid = a.message[i]._id;
-                                $(__this.el).find('.user-del-btn-' + thisuserid).removeClass('hide_item');
-                                $(__this.el).find('.user-del-btn-' + thisuserid).addClass('show_item_block');
+                                $(__this.el).find('.user-del-btn-' + thisuserid).show();
                                 // user 가 1명보다 많은 경우만 삭제할 수 있다.
                                 $(__this.el).find('.user-del-btn-' + thisuserid).on('click', function(e) {
                                     var thisClassNameArr = e.currentTarget.className.split(" ");
@@ -210,16 +204,15 @@ define(
                                         if(a.code == "ok") {
                                             __this.loadTodoUser(__this);
                                         } else {
-                                            ;
+                                            // ;
                                         }
                                     }, function(a,b,c){
-                                        ;
+                                        // ;
                                     });
                                 });
                             } else {
                                 // user 가 1명인 경우 삭제 할 수 없다.
-                                $(__this.el).find('.user-del-btn-' + a.message[i]._id).removeClass('show_item_block');
-                                $(__this.el).find('.user-del-btn-' + a.message[i]._id).addClass('hide_item');
+                                $(__this.el).find('.user-del-btn-' + a.message[i]._id).hide();
                             }
                         }
 
@@ -233,10 +226,10 @@ define(
                         $(__this.el).find('.user_count').empty();
                         $(__this.el).find('.user_count').text(__this.model.user_cnt);
                     } else {
-                        ;
+                        // ;
                     }
                 }, function(a,b,c) {
-                    ;
+                    // ;
                 });
             },
             addTodoUser: function(e, __this) {
@@ -271,7 +264,7 @@ define(
 
                     __todo.searchUser(searchword, function(a,b,c) {
                         if(a.code == "ok") {
-                            if(_.size(a.message) == 0) {
+                            if(_.size(a.message) === 0) {
                                 $('.user-search-result-list').append(user_add_blank_item_template());
                             } else {
                                 for(var i=0; i< _.size(a.message); i++) {
@@ -297,10 +290,10 @@ define(
                         $('#userAddModal').find('.user-search-btn').off('click');
                         $('#userAddModal').find('.add-user-save-close').off('click');
                     } else {
-                        ;
+                        // ;
                     }
                 }, function(a,b,c){
-                    ;
+                    // ;
                 });
             },
             loadTodoComment:function(__this) {
@@ -324,7 +317,7 @@ define(
                     $(__this.el).find('.comment_count').empty();
                     $(__this.el).find('.comment_count').text(__this.model.comment_cnt);
                 }, function(a,b,c){
-                    ;
+                    // ;
                 });
 
             },
@@ -339,10 +332,10 @@ define(
                     if(a.code == "ok") {
                         __this.loadTodoComment(__this);
                     } else {
-                        ;
+                        // ;
                     }
                 }, function(a,b,c){
-                    ;
+                    // ;
                 });
             },
             addComment: function(comment) {
@@ -384,43 +377,35 @@ define(
                         subTodoCnt = _.size(a.message);
                         __this.subtodoarr = a.message;
                     } else {
-                        ;
+                        // ;
                     }
-                    $(__this.el).find("#openSubBtn").empty();
+                    var openSubBtn = $(__this.el).find("#openSubBtn");
+                    openSubBtn.empty();
                     if(subTodoCnt > 0) {
-                        $(__this.el).find("#openSubBtn").addClass("show_item");
-                        $(__this.el).find("#openSubBtn").removeClass("hide_item");
+                        openSubBtn.show();
                         if(__this.subtodoopen) {
                             subTodoCntText = subTodoCnt + "개 닫기";
                         } else {
                             subTodoCntText = subTodoCnt + "개 열기";
                         }
-                        $(__this.el).find("#openSubBtn").empty();
-                        $(__this.el).find("#openSubBtn").text(subTodoCntText);
+                        openSubBtn.text(subTodoCntText);
                     } else {
-                        $(__this.el).find("#openSubBtn").removeClass("show_item");
-                        $(__this.el).find("#openSubBtn").addClass("hide_item");
+                        openSubBtn.hide();
                     }
                 }, function(a, b, c){
-                    ;
+                    // ;
                 });
             },
             render: function() {
                 $(this.el).html(template({todo:this.model}));
-                $(this.el).find('.todoeditmode').removeClass('show_item');
-                $(this.el).find('.todoeditmode').addClass('hide_item');
-
+                $(this.el).find('.todoeditmode').hide();
 
                 if(this.model.done) {
-                    $(this.el).find('#editTodoItemBtn').removeClass('show_item');
-                    $(this.el).find('#editTodoItemBtn').addClass('hide_item');
-                    $(this.el).find(".todoclosedate").removeClass("hide_item");
-                    $(this.el).find(".todoclosedate").addClass("show_item");
+                    $(this.el).find('#editTodoItemBtn').hide();
+                    $(this.el).find(".todoclosedate").show();
                 } else {
-                    $(this.el).find('#editTodoItemBtn').removeClass('hide_item');
-                    $(this.el).find('#editTodoItemBtn').addClass('show_item');
-                    $(this.el).find(".todoclosedate").removeClass("show_item");
-                    $(this.el).find(".todoclosedate").addClass("hide_item");
+                    $(this.el).find('#editTodoItemBtn').show();
+                    $(this.el).find(".todoclosedate").hide();
                 }
 
                 this.showDepthBar();

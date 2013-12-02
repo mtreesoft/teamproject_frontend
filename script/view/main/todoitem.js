@@ -73,10 +73,10 @@ define(
                     if(a.code == "ok") {
                         __this.refreshThisTodo();
                     } else {
-                        ;
+                        // ;
                     }
                 }, function (a,b,c) {
-                    ;
+                    // ;
                 });
             },
             refreshThisTodo: function() {
@@ -94,10 +94,10 @@ define(
                         }
                         __this.render();
                     } else {
-                        ;
+                        // ;
                     }
                 }, function(a,b,c){
-                    ;
+                    // ;
                 });
             },
             dateformat: function(date) {
@@ -116,8 +116,8 @@ define(
                 } else {
                     todo.getList(parents[depth], 0, function(a, b, c){
                         if(a.code == "ok") {
-                            var title = ""
-                            if(depth != 0) {
+                            var title = "";
+                            if(depth !== 0) {
                                 title = " > ";
                             }
                             title +=a.message[0].title;
@@ -129,7 +129,7 @@ define(
                         }
 
                     }, function(a, b, c){
-                        ;
+                        // ;
                     });
                 }
             },

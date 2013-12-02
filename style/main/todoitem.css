@@ -42,10 +42,6 @@ text-align:right;
 width:100%;
 }
 
-.hide_item {
-display:none;
-}
-
 .todoline3 {
 margin:5px 0;
 text-align:right;
@@ -56,10 +52,6 @@ font-size:x-small;
 text-align:right;
 }
 
-.startdate,.enddate,.todocreateddate {
+.todocreateddate {
 font-size:x-small;
-}
-
-.show_item{
-    display:inline-block;
 }

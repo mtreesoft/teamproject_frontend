@@ -72,20 +72,20 @@
         <div class="form-group">
             <label class="control-label">Todo 내용</label>
             <div class="controls">
-                <textarea rows=1 id="edit_title"></textarea>
+                <textarea rows=1 id="edit_title" class="form-control span6"></textarea>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="form-group startdate">
-            <label class="control-label col-xs-6">시작일</label>
+            <label class="control-label">시작일</label>
             <div class="controls">
                 <input type="date" id="edit_startdate" class="form-control span6" />
             </div>
         </div>
 
         <div class="form-group enddate">
-            <label class="control-label col-xs-6">종료일</label>
+            <label class="control-label">종료일</label>
             <div class="controls">
                 <input type="date" id="edit_enddate" class="form-control span6" />
             </div>
