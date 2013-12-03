@@ -104,7 +104,7 @@ define(
         loadTodoList:function(__this, itemlist) {
             $(__this.el).find('.todolist').empty();
             if(_.size(itemlist) == 0) {
-                $(__this.el).find('.todolist').append("진행 중인 Todo가 없습니다!!!");
+                $(__this.el).find('.todolist').append("<p class='noitem'>진행 중인 Todo가 없습니다.<br />상단에서 바로 추가하실 수 있습니다.</p>");
             } else {
                 var __countDone = 0;
                 var __countDoing = 0;
