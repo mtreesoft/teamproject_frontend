@@ -164,6 +164,10 @@ border-radius:6px 6px 0 0;
 background:#ccc;
 }
 
+.modal .modal-body .row {
+margin:0;
+}
+
 .modal ..modal-footer {
 margin-top:0;
 }

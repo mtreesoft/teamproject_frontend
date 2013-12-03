@@ -236,6 +236,9 @@ define(
                 var __this = this;
                 e.stopPropagation();
 
+                $('#userAddModal').find('input.user-search-word').on('keyup', function() {
+                    if (event.keyCode == 13) __this.searchUser($(this).val());
+                });
                 $('#userAddModal').find('.user-search-btn').on('click', function() {
                     __this.searchUser($(".user-search-word").val());
                 });
