@@ -30,13 +30,13 @@ div.detailview {
 }
 
 .detailview .todolistblock .top-btns {
-    margin: 0;
+margin: 0;
 }
 
 .detailview .todolistblock .detailtodoitem {
-    display: block;
-    margin: 5px 0;
-    padding-left: 10px;
+display: block;
+margin: 5px 0;
+padding-left: 10px;
 }
 
 .detailview .todolistblock .depth0 { border-left: 0; padding-left: 0; }
@@ -46,36 +46,40 @@ div.detailview {
 .detailview .todolistblock .depth4 { border-left: solid 20px #a50000; } /* #870000; */
 
 .detailview .todolistblock .blanktodoitem {
-    margin-top: -5px;
-    padding-top: 5px;
+margin-top: -5px;
+padding-top: 5px;
 }
 .detailview .todolistblock .blank_border {
-    margin-left:10px;
+margin-left:10px;
 }
 
 .detailview .todolistblock .depth0 .blank_border {
-    margin-left: 0;
+margin-left: 0;
 }
 
 .detailview .projectbackbtn button {
-    display: block;
-    width: 60px;
-    height: 30px;
+display: block;
+width: 60px;
+height: 30px;
 }
 
 .detailview .todolistblock .todotitle {
-    margin: 10px 0;
-    word-wrap: break-word;
-    font-size: 10pt;
-    color: #555555;
-    font-weight: normal;
+margin: 10px 0;
+word-wrap: break-word;
+font-size: 10pt;
+color: #555555;
+font-weight: normal;
 }
 
 .detailview .todolistblock {
-    border: 1px solid #dddddd; /* #b0b0b0; */
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    padding: 8px;
+border: 1px solid #dddddd; /* #b0b0b0; */
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+margin-bottom: 5px;
+padding: 8px;
+}
+
+.detailview .userlist > div {
+width:auto;
 }

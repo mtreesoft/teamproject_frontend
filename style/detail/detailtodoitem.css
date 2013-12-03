@@ -62,7 +62,20 @@ margin:1px 0;
 }
 
 .todocommentlist .blankcommentitem {
-margin:5px 0;
+margin:5px 0 0 0;
+border:0;
+padding:0;
+}
+
+.blank_border .edit_mode textarea {
+width: -moz-calc(100% - 90px);
+width: -webkit-calc(100% - 90px);
+width: calc(100% - 90px);
+}
+
+.blank_border #addtodota {
+margin:0;
+padding:6px;
 }
 
 .detailview .todolistblock {
@@ -82,4 +95,16 @@ font-size:small;
 .panel .panel-heading,
 .list-group-item {
 padding: 5px;
+}
+
+#addCommentText {
+width: -moz-calc(100% - 90px);
+width: -webkit-calc(100% - 90px);
+width: calc(100% - 90px);
+border: 1px solid #dddddd;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+margin: 0;
+padding: 6px;
 }
