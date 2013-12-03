@@ -83,3 +83,11 @@ padding: 8px;
 .detailview .userlist > div {
 width:auto;
 }
+
+.user-search-result .table {
+margin:10px 0;
+}
+
+.user-search-result .table th {
+background:#eee;
+}

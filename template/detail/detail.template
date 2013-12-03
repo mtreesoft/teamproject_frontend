@@ -22,7 +22,7 @@
                 <h4 class="modal-title"><span class="glyphicon glyphicon-user"/> 사용자 찾기</h4>
             </div>
             <div class="modal-body">
-                <div class="row user-search">
+                <div class="user-search">
                     <div class="input-group">
                         <input type="text" class="form-control user-search-word">
                             <span class="input-group-btn">
@@ -31,7 +31,7 @@
                         </input>
                     </div><!-- /input-group -->
                 </div>
-                <div class="row user-search-result">
+                <div class="user-search-result">
                     <table class="table table-hover">
                         <thead>
                         <tr>

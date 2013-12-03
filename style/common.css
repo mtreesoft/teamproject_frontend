@@ -154,3 +154,16 @@ body {
     padding:0;
     display: inline-block;
 }
+
+body.modal-open {
+margin-right:0;
+}
+
+.modal .modal-header {
+border-radius:6px 6px 0 0;
+background:#ccc;
+}
+
+.modal ..modal-footer {
+margin-top:0;
+}
