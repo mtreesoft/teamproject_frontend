@@ -79,6 +79,9 @@ define(
                         return;
                     }
 
+                    // 아이디 기억
+                    Cookies.setCookie("user_id", user.id);
+
                     // 가입성공.
                     user.me(function(a,b,c) {
                         // 내정보 가져오기 성공.
@@ -116,7 +119,7 @@ define(
 
             render: function() {
                 $(this.el).empty();
-                $(this.el).html(template());
+                $(this.el).html(template({user_id: Cookies.getCookie("user_id")}));
                 this.delegateEvents();
                 return this;
             },
